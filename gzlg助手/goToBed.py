@@ -58,7 +58,7 @@ def login(session):
         # 'id': '',
         'id': uid,
         # 'code': ''
-        'code': str(yzm),
+        'code': str(yzm)
     }
     response = session.post('https://ids.gzist.edu.cn/lyuapServer/v1/tickets', data=data)
     if 'NOUSER' in response.json():
