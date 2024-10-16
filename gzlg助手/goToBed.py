@@ -37,7 +37,7 @@ def getCode(image):
     resp = requests.post(url, headers={'Content-Type': 'application/json'}, data=json.dumps(payload))
     result = resp.json()["data"]["data"]
     result = result.replace('o', '0').replace('l', '1').replace('O', '0').replace('十', '+').replace('三', '')
-    logging.log(logging.INFO, '验证码识别结果：' + result[:-1])
+    # logging.log(logging.INFO, '验证码识别结果：' + result[:-1])
     print('验证码识别结果：' + result[:-1])
     return eval(result[:-1])
 
