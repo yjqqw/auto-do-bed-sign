@@ -20,8 +20,8 @@ def get_beijing_time():
 
 
 def send_QQ_email_plain(content):
-    sender = user = '1781259604@qq.com'
-    passwd = 'tffenmnkqsveccdj'
+    sender = user = 'zhangweiluo2005@qq.com'
+    passwd = 'mlqabdckjdfvbadj'
 
     # 格式化北京时间为 "年-月-日 星期几 时:分" 格式
     formatted_date = get_beijing_time()
